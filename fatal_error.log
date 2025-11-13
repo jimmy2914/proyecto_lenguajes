@@ -1,0 +1,1825 @@
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 329, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 710, in accept
+    return visitor.visitFuncion_llamada(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 126, in visitFuncion_llamada
+    raise Exception(f"Error: la función '{nombre}' esperaba {len(params)} argumento(s) pero recibió {len(args)}.")
+Exception: Error: la función 'pepito' esperaba 1 argumento(s) pero recibió 0.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 329, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 448, in accept
+    return visitor.visitDeclarar_var(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 90, in visitDeclarar_var
+    nombre = ctx.ID().getText()
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'getText'
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 329, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1396, in accept
+    return visitor.visitGraficar_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 243, in visitGraficar_polinomio
+    self.polinomios.graficar_polinomio(nombre)
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\environments.py", line 142, in graficar_polinomio
+    raise Exception(f"Polinomio '{nombre_polinomio}' no definido para graficar.")
+Exception: Polinomio 'p' no definido para graficar.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 329, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1396, in accept
+    return visitor.visitGraficar_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 243, in visitGraficar_polinomio
+    self.polinomios.graficar_polinomio(nombre)
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\environments.py", line 142, in graficar_polinomio
+    raise Exception(f"Polinomio '{nombre_polinomio}' no definido para graficar.")
+Exception: Polinomio 'p' no definido para graficar.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 329, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1396, in accept
+    return visitor.visitGraficar_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 243, in visitGraficar_polinomio
+    self.polinomios.graficar_polinomio(nombre)
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\environments.py", line 142, in graficar_polinomio
+    raise Exception(f"Polinomio '{nombre_polinomio}' no definido para graficar.")
+Exception: Polinomio 'p' no definido para graficar.
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\main.py", line 18, in <module>
+    sys.exit(app.exec())
+             ^^^^^^^^^^
+KeyboardInterrupt
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 181, in _tutorial_selected
+    self.simulation_panel.load_map(map_data)
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\simulation_panel.py", line 178, in load_map
+    rect.setPen(QPen(Qt.black))
+                     ^^^^^^^^
+AttributeError: type object 'Qt' has no attribute 'black'
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 181, in _tutorial_selected
+    self.simulation_panel.load_map(map_data)
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\simulation_panel.py", line 200, in load_map
+    self._draw_player()
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\simulation_panel.py", line 70, in _draw_player
+    self.scene.removeItem(self.player_item)
+RuntimeError: wrapped C/C++ object of type QGraphicsPixmapItem has been deleted
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 181, in _tutorial_selected
+    self.simulation_panel.load_map(map_data)
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\simulation_panel.py", line 200, in load_map
+    self._draw_player()
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\simulation_panel.py", line 70, in _draw_player
+    self.scene.removeItem(self.player_item)
+RuntimeError: wrapped C/C++ object of type QGraphicsPixmapItem has been deleted
+
+--- Error al cargar el Executor ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 307, in run_code
+    from core.executor import MinicodeExecutor
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 6, in <module>
+    from core.environments import EntornoGrafico, EntornoMusical, EntornoPolinomios
+ImportError: cannot import name 'EntornoMusical' from 'core.environments' (c:\Users\jimmy\Desktop\Proyecto lenguajes\core\environments.py)
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 363, in run_code
+    executor.entorno_grafico()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'entorno_grafico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 149, in <lambda>
+    run_graphics_btn.clicked.connect(lambda: self.run_code(mode="juegos"))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 379, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 363, in run_code
+    executor.entorno_grafico()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'entorno_grafico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 149, in <lambda>
+    run_graphics_btn.clicked.connect(lambda: self.run_code(mode="juegos"))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 379, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 379, in run_code
+    executor.entorno_musical()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'entorno_musical'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 397, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 379, in run_code
+    executor.entorno_musical()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'entorno_musical'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 397, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 379, in run_code
+    executor.entorno_musical()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'entorno_musical'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 397, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 374, in run_code
+    executor.entorno_grafico()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'entorno_grafico'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 159, in <lambda>
+    run_graphics_btn.clicked.connect(lambda: self.run_code(mode="juegos"))
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 397, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 379, in run_code
+    executor.entorno_musical()
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'entorno_musical'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 397, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\main.py", line 26, in <module>
+    sys.exit(app.exec())
+             ^^^^^^^^^^
+KeyboardInterrupt
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 361, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1026, in accept
+    return visitor.visitBloque(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 155, in visitBloque
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'accept'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 374, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 361, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1026, in accept
+    return visitor.visitBloque(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 155, in visitBloque
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'accept'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 374, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 361, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1026, in accept
+    return visitor.visitBloque(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 155, in visitBloque
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'accept'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 374, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 361, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1026, in accept
+    return visitor.visitBloque(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 155, in visitBloque
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'accept'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 374, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 361, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1026, in accept
+    return visitor.visitBloque(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 155, in visitBloque
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'accept'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 374, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 361, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1026, in accept
+    return visitor.visitBloque(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 155, in visitBloque
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'accept'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 374, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 361, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1026, in accept
+    return visitor.visitBloque(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 155, in visitBloque
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'accept'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 374, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 365, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 239, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 81, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 329, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 971, in accept
+    return visitor.visitRepetir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 151, in visitRepetir
+    self.visit(ctx.bloque())
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'accept'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 378, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 358, in run_code
+    executor = MinicodeExecutor(self.console_output, self.simulation_panel, polinomios_panel=self.polinomios_panel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MinicodeExecutor.__init__() got an unexpected keyword argument 'polinomios_panel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 358, in run_code
+    executor = MinicodeExecutor(self.console_output, self.simulation_panel, polinomios_panel=self.polinomios_panel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MinicodeExecutor.__init__() got an unexpected keyword argument 'polinomios_panel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 358, in run_code
+    executor = MinicodeExecutor(self.console_output, self.simulation_panel, polinomios_panel=self.polinomios_panel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MinicodeExecutor.__init__() got an unexpected keyword argument 'polinomios_panel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 358, in run_code
+    executor = MinicodeExecutor(self.console_output, self.simulation_panel, polinomios_panel=self.polinomios_panel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: MinicodeExecutor.__init__() got an unexpected keyword argument 'polinomios_panel'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 264, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 366, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1522, in accept
+    return visitor.visitMostrar_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 267, in visitMostrar_polinomio
+    self.polinomios_panel.display_expression(expr, nombre)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PolinomiosPanel' object has no attribute 'display_expression'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 264, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 366, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 503, in accept
+    return visitor.visitDeclarar_var(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 96, in visitDeclarar_var
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1942, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 386, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 67, in get_variable_value
+    for scope in reversed(self.call_stack):
+                          ^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'call_stack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 264, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 366, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1458, in accept
+    return visitor.visitDefinir_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 249, in visitDefinir_polinomio
+    expresion = ctx.expresion().getText()
+                ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'getText'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 264, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 366, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 503, in accept
+    return visitor.visitDeclarar_var(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 96, in visitDeclarar_var
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1967, in accept
+    return visitor.visitExpSumaResta(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 325, in visitExpSumaResta
+    izq = self.visit(ctx.expresion(0))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1942, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 386, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 67, in get_variable_value
+    for scope in reversed(self.call_stack):
+                          ^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'call_stack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 264, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 366, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1141, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 164, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1942, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 386, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 67, in get_variable_value
+    for scope in reversed(self.call_stack):
+                          ^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'call_stack'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 264, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 86, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 366, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 89, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1141, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 166, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1942, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 388, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 72, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 264, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 86, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 366, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 89, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1141, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 166, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1942, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 388, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 72, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 86, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 89, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1145, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 166, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1969, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 388, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 72, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 86, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 89, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1145, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 166, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1969, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 388, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 72, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 384, in run_code
+    tb = traceback.format_exc()
+         ^^^^^^^^^
+UnboundLocalError: cannot access local variable 'traceback' where it is not associated with a value
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 86, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 89, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1145, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 166, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1969, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 388, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 72, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 86, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 89, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1462, in accept
+    return visitor.visitDefinir_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeVisitor.py", line 84, in visitDefinir_polinomio
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1834, in accept
+    return visitor.visitExpPotencia(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeVisitor.py", line 119, in visitExpPotencia
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1969, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 395, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 72, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'x' no definida.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 86, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 89, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1145, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 166, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1969, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 395, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 72, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 90, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1145, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 167, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1969, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 396, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 73, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 90, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1145, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 167, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1969, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 395, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 73, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+Traceback (most recent call last):
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\matplotlib\backends\backend_qt.py", line 265, in eventFilter
+    def eventFilter(self, source, event):
+    
+KeyboardInterrupt
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 90, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1145, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 168, in visitImprimir
+    if self.console_output:
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'console_output'
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\main.py", line 26, in <module>
+    sys.exit(app.exec())
+             ^^^^^^^^^^
+KeyboardInterrupt
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 260, in visitDefinir_polinomio
+    if self.console:
+       ^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'console'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 90, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1462, in accept
+    return visitor.visitDefinir_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 267, in visitDefinir_polinomio
+    if self.console:
+       ^^^^^^^^^^^^
+AttributeError: 'MinicodeExecutor' object has no attribute 'console'
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 80, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 83, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1145, in accept
+    return visitor.visitImprimir(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 159, in visitImprimir
+    valor = self.visit(ctx.expresion())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1969, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 375, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 66, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'p1' no definida.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 80, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 83, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1583, in accept
+    return visitor.visitGraficar_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 293, in visitGraficar_polinomio
+    self.polinomios_panel.plot_expression(expr, nombre)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PolinomiosPanel' object has no attribute 'plot_expression'
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 371, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 80, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 83, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1583, in accept
+    return visitor.visitGraficar_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 293, in visitGraficar_polinomio
+    self.polinomios_panel.plot_expression(expr, nombre)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'PolinomiosPanel' object has no attribute 'plot_expression'
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 373, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 80, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 83, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1662, in accept
+    return visitor.visitOperar_polinomio(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 258, in visitOperar_polinomio
+    p2 = ctx.ID(1).getText()
+         ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'getText'
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 373, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 80, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 83, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 642, in accept
+    return visitor.visitFuncion_def(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 104, in visitFuncion_def
+    nombre = ctx.ID().getText()
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'getText'
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 373, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 268, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 80, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 370, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 83, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 642, in accept
+    return visitor.visitFuncion_def(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 104, in visitFuncion_def
+    nombre = ctx.ID().getText()
+             ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'getText'
+

@@ -1,0 +1,11 @@
+
+definir polinomio p1 = x**2 + 3*x + 2
+mostrar polinomio p1
+graficar p1
+
+
+definir polinomio p2 = x**4 + 5*x - 2
+mostrar polinomio p2
+graficar p2
+
+sumar polinomio p1 con polinomio p2

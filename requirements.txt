@@ -1,0 +1,5 @@
+PyQt6
+antlr4-python3-runtime
+matplotlib # Para graficar polinomios (si se implementa)
+sympy      # Para manipulación simbólica de polinomios (si se implementa)
+numpy

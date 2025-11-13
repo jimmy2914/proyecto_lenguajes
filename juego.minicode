@@ -1,0 +1,15 @@
+repetir 2 veces
+	mover adelante
+fin
+
+girar derecha
+
+repetir 2 veces
+	mover adelante
+fin
+
+girar izquierda
+
+repetir 3 veces 
+	mover adelante
+fin
