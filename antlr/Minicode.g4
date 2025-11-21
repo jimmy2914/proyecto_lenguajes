@@ -175,11 +175,6 @@ ATRAS       : 'atras';
 GIRAR       : 'girar';
 IZQUIERDA   : 'izquierda';
 DERECHA     : 'derecha';
-CAMBIAR     : 'cambiar';
-COLOR       : 'color';
-BAJAR       : 'bajar';
-SUBIR       : 'subir';
-LAPIZ       : 'lapiz';
 
 // --- Comandos musicales ---
 TOCAR       : 'tocar';

@@ -1,6 +1,6 @@
 # minicode_ide/gui/console_output.py
 from PyQt6.QtWidgets import QTextEdit
-from PyQt6.QtGui import QFont, QTextCursor # QTextCursor sigue siendo la clase correcta
+from PyQt6.QtGui import QFont, QTextCursor
 
 class ConsoleOutput(QTextEdit):
     def __init__(self):
@@ -10,10 +10,8 @@ class ConsoleOutput(QTextEdit):
         self.append("Consola de salida:\n")
 
     def append(self, text):
-        # Mueve el cursor al final antes de añadir texto
         cursor = self.textCursor()
-        # ¡Corrección aquí!
-        cursor.movePosition(QTextCursor.MoveOperation.End) # Usar MoveOperation.End
+        cursor.movePosition(QTextCursor.MoveOperation.End)
         self.setTextCursor(cursor)
         self.insertPlainText(text + '\n')
-        self.ensureCursorVisible() # Asegura que el nuevo texto sea visible
+        self.ensureCursorVisible()

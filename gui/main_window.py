@@ -205,7 +205,7 @@ class MainWindow(QMainWindow):
                 # Es un mapa, no un archivo de código
                 map_data = self.tutorial_manager.load_map_data(tutorial_name.replace("[Mapa] ", ""))
                 if map_data:
-                    self.console_output.append(f"🗺️ Cargando mapa: {tutorial_name}")
+                    self.console_output.append(f"Cargando mapa: {tutorial_name}")
                     self.simulation_panel.load_map(map_data)
                     self.current_file = f"Mapa: {tutorial_name}"
                     self.setWindowTitle(f"Minicode IDE - {self.current_file}")
@@ -267,7 +267,7 @@ class MainWindow(QMainWindow):
                 # Si hay un mapa cargado, solo reiniciarlo, no borrarlo
                 if self.simulation_panel.map_data is not None:
                     self.simulation_panel.reset_map()
-                    self.console_output.append("(ℹ Mapa mantenido en vista)")
+                    self.console_output.append("( Mapa mantenido en vista)")
                 else:
                     self.simulation_panel.clear_canvas()
             except Exception:
@@ -313,7 +313,7 @@ class MainWindow(QMainWindow):
             if self.simulation_panel.map_data is None:
                 self.simulation_panel.clear_canvas()
             else:
-                self.console_output.append("(ℹ Mapa cargado: se conserva durante la ejecución)")
+                self.console_output.append("(Mapa cargado: se conserva durante la ejecución)")
         except Exception:
             self.console_output.append("Warning: fallo al preparar el panel de simulación (ignored).")
 
@@ -437,7 +437,7 @@ class MainWindow(QMainWindow):
             if tab_name == "Árbol AST":
                 codigo = self.code_editor.toPlainText().strip()
                 if not codigo:
-                    self.console_output.append("⚠️ No hay código para generar el AST.")
+                    self.console_output.append(" No hay código para generar el AST.")
                     return
 
                 from antlr4 import InputStream, CommonTokenStream
@@ -511,9 +511,9 @@ class MainWindow(QMainWindow):
         try:
             if hasattr(self.simulation_panel, "reset_map"):
                 self.simulation_panel.reset_map()
-                self.console_output.append("🔁 Mapa restaurado a su estado inicial.")
+                self.console_output.append("Mapa restaurado a su estado inicial.")
             else:
-                self.console_output.append("⚠️ El panel de simulación no soporta reinicio.")
+                self.console_output.append("El panel de simulación no soporta reinicio.")
         except Exception:
             tb = traceback.format_exc()
             self.console_output.append("--- Error al reiniciar el mapa ---")
