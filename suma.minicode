@@ -1,0 +1,6 @@
+definir x como 4
+funcion sumarx(x):
+	definir suma como x + 5
+	mostrar suma
+fin
+sumarx(x)

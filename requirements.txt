@@ -1,0 +1,7 @@
+PyQt6
+antlr4-python3-runtime
+Pillow
+sympy
+matplotlib
+pygame
+numpy
