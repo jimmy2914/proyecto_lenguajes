@@ -1,0 +1,86 @@
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 391, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 279, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 389, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1024, in accept
+    return visitor.visitCondicional(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 144, in visitCondicional
+    condicion = self.visit(ctx.expresion())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 2269, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 385, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 70, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'do' no definida.
+
+--- Error durante la ejecución ---
+Traceback (most recent call last):
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\gui\main_window.py", line 391, in run_code
+    executor.visit(tree)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 279, in accept
+    return visitor.visitPrograma(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 84, in visitPrograma
+    self.visit(instr)
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 389, in accept
+    return visitor.visitInstruccion(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 87, in visitInstruccion
+    return self.visitChildren(ctx)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 44, in visitChildren
+    childResult = c.accept(self)
+                  ^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 1024, in accept
+    return visitor.visitCondicional(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 144, in visitCondicional
+    condicion = self.visit(ctx.expresion())
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\jimmy\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\antlr4\tree\Tree.py", line 34, in visit
+    return tree.accept(self)
+           ^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\antlr\MinicodeParser.py", line 2269, in accept
+    return visitor.visitExpID(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 385, in visitExpID
+    return self.get_variable_value(nombre)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\jimmy\Desktop\Proyecto lenguajes\core\executor.py", line 70, in get_variable_value
+    raise Exception(f"Error: variable '{name}' no definida.")
+Exception: Error: variable 'do' no definida.
+

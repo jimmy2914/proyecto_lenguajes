@@ -246,18 +246,18 @@ class MinicodeExecutor(MinicodeVisitor):
             self.polinomios[nombre] = expr
             self.variables[nombre] = expr
             if self.console_output:
-                self.console_output.append(f"📈 Polinomio '{nombre}' definido como: {expr}")
+                self.console_output.append(f"Polinomio '{nombre}' definido como: {expr}")
         except Exception as e:
             if self.console_output:
-                self.console_output.append(f"❌ Error al definir polinomio '{nombre}': {e}")
+                self.console_output.append(f"Error al definir polinomio '{nombre}': {e}")
 
     def visitMostrar_polinomio(self, ctx):
         nombre = ctx.ID().getText()
         if nombre not in self.polinomios:
-            self.console_output.append(f"⚠️ Polinomio '{nombre}' no existe.")
+            self.console_output.append(f"Polinomio '{nombre}' no existe.")
             return
         expr = self.polinomios[nombre]
-        self.console_output.append("🧮 Polinomio:")
+        self.console_output.append("Polinomio:")
         self.console_output.append(pretty(expr))
         if self.polinomios_panel:
             self.polinomios_panel.display_expression(expr, nombre)
@@ -267,7 +267,7 @@ class MinicodeExecutor(MinicodeVisitor):
         p1 = ctx.ID(0).getText()
         p2 = ctx.ID(1).getText()
         if p1 not in self.polinomios or p2 not in self.polinomios:
-            self.console_output.append("⚠️ Uno de los polinomios no está definido.")
+            self.console_output.append("Uno de los polinomios no está definido.")
             return
 
         expr1 = self.polinomios[p1]
@@ -282,23 +282,23 @@ class MinicodeExecutor(MinicodeVisitor):
         elif op == "dividir":
             resultado = simplify(expr1 / expr2)
         else:
-            self.console_output.append(f"⚠️ Operación '{op}' no reconocida.")
+            self.console_output.append(f"Operación '{op}' no reconocida.")
             return
 
         nombre_res = f"{p1}_{op}_{p2}"
         self.polinomios[nombre_res] = resultado
         self.variables[nombre_res] = resultado
-        self.console_output.append(f"✅ Nuevo polinomio '{nombre_res}' = {pretty(resultado)}")
+        self.console_output.append(f"Nuevo polinomio '{nombre_res}' = {pretty(resultado)}")
         if self.polinomios_panel:
             self.polinomios_panel.display_expression(resultado, nombre_res)
 
     def visitGraficar_polinomio(self, ctx):
         nombre = ctx.ID().getText()
         if nombre not in self.polinomios:
-            self.console_output.append(f"⚠️ Polinomio '{nombre}' no existe.")
+            self.console_output.append(f"Polinomio '{nombre}' no existe.")
             return
         expr = self.polinomios[nombre]
-        self.console_output.append(f"📊 Graficando polinomio '{nombre}'...")
+        self.console_output.append(f"Graficando polinomio '{nombre}'...")
         if self.polinomios_panel:
             self.polinomios_panel.plot_expression(expr, nombre)
 
