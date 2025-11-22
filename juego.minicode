@@ -1,10 +1,38 @@
+girar izquierda
+
+mover adelante
+
+girar derecha
+
+repetir 3 veces
+	mover adelante
+fin
+
+girar izquierda
 repetir 2 veces
+	mover adelante
+fin
+girar izquierda
+
+repetir 3 veces
 	mover adelante
 fin
 
 girar derecha
 
-repetir 2 veces
+repetir 4 veces
+	mover adelante
+fin
+
+girar derecha
+
+repetir 2 veces 
+	mover adelante
+fin
+
+girar derecha
+
+repetir 2 veces 
 	mover adelante
 fin
 
@@ -13,3 +41,19 @@ girar izquierda
 repetir 3 veces 
 	mover adelante
 fin
+
+girar derecha
+
+repetir 4 veces 
+	mover adelante
+fin
+
+girar izquierda
+
+repetir 2 veces 
+	mover adelante
+fin
+girar derecha
+mover adelante
+
+

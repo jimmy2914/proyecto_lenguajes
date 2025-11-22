@@ -1,42 +1,23 @@
-# Ejemplo de comandos musicales en Minicode
-# Este archivo demuestra el uso del panel de música
+# Frase 1
+tocar nota mi5 durante 0.5 segundos
+tocar nota si4 durante 0.25 segundos
+tocar nota do5 durante 0.25 segundos
+tocar nota re5 durante 0.5 segundos
+tocar nota do5 durante 0.25 segundos
+tocar nota si4 durante 0.25 segundos
 
-# Tocar notas individuales
-tocar nota do
-tocar nota re
-tocar nota mi
-tocar nota fa
-tocar nota sol
-tocar nota la
-tocar nota si
+tocar nota la4 durante 0.5 segundos
+tocar nota la4 durante 0.25 segundos
+tocar nota do5 durante 0.25 segundos
+tocar nota mi5 durante 0.5 segundos
+tocar nota re5 durante 0.25 segundos
+tocar nota do5 durante 0.25 segundos
 
-# Tocar notas con duración específica
-tocar nota do durante 1 segundos
-tocar nota mi durante 0.5 segundos
-tocar nota sol durante 1.5 segundos
+tocar nota si4 durante 0.75 segundos
+tocar nota do5 durante 0.25 segundos
+tocar nota re5 durante 0.5 segundos
+tocar nota mi5 durante 0.5 segundos
 
-# Tocar notas con octavas específicas
-tocar nota do3
-tocar nota do4
-tocar nota do5
-
-# Tocar notas sostenidas
-tocar nota do#
-tocar nota re#
-tocar nota fa#
-tocar nota sol#
-tocar nota la#
-
-# Melodía simple
-tocar nota do durante 0.5 segundos
-tocar nota re durante 0.5 segundos
-tocar nota mi durante 0.5 segundos
-tocar nota fa durante 0.5 segundos
-tocar nota sol durante 1 segundos
-tocar nota sol durante 1 segundos
-
-tocar nota la durante 0.5 segundos
-tocar nota la durante 0.5 segundos
-tocar nota la durante 0.5 segundos
-tocar nota la durante 0.5 segundos
-tocar nota sol durante 2 segundos
+tocar nota do5 durante 0.5 segundos
+tocar nota la4 durante 0.5 segundos
+tocar nota la4 durante 1 segundos
